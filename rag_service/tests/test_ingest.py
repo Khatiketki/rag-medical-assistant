@@ -32,7 +32,8 @@ def test_tuned_chunks_respect_size_and_carry_sections(docs):
 def test_baseline_chunks_embed_text_only(docs):
     nodes = ingest.chunk_documents(docs, get_profile("baseline"))
     sample = nodes[0]
-    assert sample.metadata["title"] not in sample.get_content(metadata_mode="embed").split("\n")[0]
+    # No "title: ..." / "section: ..." metadata header is prepended.
+    assert sample.get_content(metadata_mode="embed") == sample.text
 
 
 def test_chunk_ids_are_unique_and_stable(docs):

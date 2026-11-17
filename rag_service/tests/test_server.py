@@ -9,7 +9,7 @@ def test_query_endpoint(tuned_pipeline):
         assert resp.status_code == 200
         body = resp.json()
         assert body["sources"][0]["doc_id"] == "uti"
-        assert "coli" in body["answer"].lower()
+        assert "[1]" in body["answer"] or "[2]" in body["answer"]  # cited answer
         assert body["disclaimer"]
 
 

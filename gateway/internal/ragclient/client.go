@@ -23,7 +23,9 @@ type StatusError struct {
 	Body string
 }
 
-func (e *StatusError) Error() string { return fmt.Sprintf("rag service returned %d: %s", e.Code, e.Body) }
+func (e *StatusError) Error() string {
+	return fmt.Sprintf("rag service returned %d: %s", e.Code, e.Body)
+}
 
 type Client struct {
 	baseURL    string

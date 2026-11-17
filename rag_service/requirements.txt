@@ -1,0 +1,18 @@
+# Orchestration / retrieval
+llama-index-core>=0.12,<0.15
+llama-index-vector-stores-qdrant>=0.4
+llama-index-embeddings-huggingface>=0.5
+langchain-core>=0.3
+langchain-text-splitters>=0.3
+qdrant-client>=1.12
+rank-bm25>=0.2.2
+# LLM
+anthropic>=0.70
+# Service
+fastapi>=0.115
+uvicorn[standard]>=0.32
+pydantic-settings>=2.6
+prometheus-client>=0.21
+# Dev / test
+pytest>=8.3
+httpx>=0.27

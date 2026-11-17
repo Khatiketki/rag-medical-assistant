@@ -1,0 +1,38 @@
+{"id": "htn-1", "question": "What blood pressure reading counts as stage 2 hypertension?", "expected_doc": "hypertension", "must_include": [["140"], ["90"]]}
+{"id": "htn-2", "question": "My doctor put me on lisinopril and now I have a dry cough. Is that a known side effect?", "expected_doc": "hypertension", "must_include": [["ace inhibitor"], ["cough"]]}
+{"id": "htn-3", "question": "How much salt should someone with high blood pressure limit themselves to each day?", "expected_doc": "hypertension", "must_include": [["2,300", "2300"]]}
+{"id": "htn-4", "question": "What is the blood pressure goal for most adults being treated for hypertension?", "expected_doc": "hypertension", "must_include": [["130/80"]]}
+{"id": "dm-1", "question": "What A1C level means you have diabetes?", "expected_doc": "type2_diabetes", "must_include": [["6.5"]]}
+{"id": "dm-2", "question": "Which medicine is usually tried first for type 2 diabetes?", "expected_doc": "type2_diabetes", "must_include": [["metformin"]]}
+{"id": "dm-3", "question": "What fasting glucose range is considered prediabetes?", "expected_doc": "type2_diabetes", "must_include": [["100"], ["125"]]}
+{"id": "dm-4", "question": "How should I treat a low blood sugar episode?", "expected_doc": "type2_diabetes", "must_include": [["15"], ["carbohydrate", "carb"]]}
+{"id": "dm-5", "question": "What stomach side effects can metformin cause?", "expected_doc": "type2_diabetes", "must_include": [["diarrhea", "nausea"]]}
+{"id": "ast-1", "question": "What is the most effective long-term controller medicine for asthma?", "expected_doc": "asthma", "must_include": [["inhaled corticosteroid"]]}
+{"id": "ast-2", "question": "How often can I use my rescue inhaler before my asthma is considered poorly controlled?", "expected_doc": "asthma", "must_include": [["twice a week", "two times a week", "2 times a week"]]}
+{"id": "ast-3", "question": "Why should I rinse my mouth after my steroid inhaler?", "expected_doc": "asthma", "must_include": [["thrush"]]}
+{"id": "flu-1", "question": "How soon do flu antivirals need to be started to work best?", "expected_doc": "influenza", "must_include": [["48 hours"]]}
+{"id": "flu-2", "question": "At what age can people get the annual flu shot?", "expected_doc": "influenza", "must_include": [["6 months"]]}
+{"id": "flu-3", "question": "How long does it take for the flu vaccine to start protecting you?", "expected_doc": "influenza", "must_include": [["two weeks", "2 weeks"]]}
+{"id": "mig-1", "question": "How long does an untreated migraine attack usually last?", "expected_doc": "migraine", "must_include": [["4"], ["72"]]}
+{"id": "mig-2", "question": "Who should avoid taking triptans for migraine?", "expected_doc": "migraine", "must_include": [["coronary artery disease", "heart disease"]]}
+{"id": "mig-3", "question": "Can taking painkillers too often make headaches worse?", "expected_doc": "migraine", "must_include": [["medication-overuse", "medication overuse"]]}
+{"id": "ane-1", "question": "Which blood test best shows if my iron stores are low?", "expected_doc": "iron_deficiency_anemia", "must_include": [["ferritin"]]}
+{"id": "ane-2", "question": "What helps my body absorb iron supplements better?", "expected_doc": "iron_deficiency_anemia", "must_include": [["vitamin c"]]}
+{"id": "ane-3", "question": "Is it normal for iron pills to turn my stool black?", "expected_doc": "iron_deficiency_anemia", "must_include": [["black", "dark"]]}
+{"id": "thy-1", "question": "How should levothyroxine be taken?", "expected_doc": "hypothyroidism", "must_include": [["empty stomach"], ["breakfast"]]}
+{"id": "thy-2", "question": "What is the most common cause of an underactive thyroid in the US?", "expected_doc": "hypothyroidism", "must_include": [["hashimoto"]]}
+{"id": "thy-3", "question": "How long after changing my thyroid dose should my TSH be rechecked?", "expected_doc": "hypothyroidism", "must_include": [["6"], ["8 weeks"]]}
+{"id": "gerd-1", "question": "When is the best time to take omeprazole for acid reflux?", "expected_doc": "gerd", "must_include": [["before"], ["meal", "breakfast"]]}
+{"id": "gerd-2", "question": "What precancerous condition can long-term heartburn lead to?", "expected_doc": "gerd", "must_include": [["barrett"]]}
+{"id": "uti-1", "question": "What symptoms suggest a bladder infection has spread to the kidneys?", "expected_doc": "uti", "must_include": [["fever"], ["flank", "back"]]}
+{"id": "uti-2", "question": "Which bacteria cause most bladder infections?", "expected_doc": "uti", "must_include": [["coli"]]}
+{"id": "str-1", "question": "What does the BE FAST acronym stand for?", "expected_doc": "stroke", "must_include": [["balance"], ["face"], ["speech"]]}
+{"id": "str-2", "question": "What is the time window for giving clot-busting drugs after a stroke?", "expected_doc": "stroke", "must_include": [["4.5 hours"]]}
+{"id": "ha-1", "question": "Do women have different heart attack symptoms than men?", "expected_doc": "heart_attack", "must_include": [["shortness of breath", "nausea", "jaw", "back"]]}
+{"id": "dehy-1", "question": "What should I give my child who is dehydrated from diarrhea?", "expected_doc": "dehydration", "must_include": [["oral rehydration"]]}
+{"id": "oos-1", "question": "What is the recommended dose of amoxicillin for strep throat?", "expected_doc": null, "must_include": []}
+{"id": "oos-2", "question": "How is psoriasis treated?", "expected_doc": null, "must_include": []}
+{"id": "oos-3", "question": "What are the early signs of Parkinson's disease?", "expected_doc": null, "must_include": []}
+{"id": "oos-4", "question": "Is it safe to get a tattoo while pregnant?", "expected_doc": null, "must_include": []}
+{"id": "oos-5", "question": "What causes kidney stones?", "expected_doc": null, "must_include": []}
+{"id": "oos-6", "question": "How many hours of sleep does a teenager need?", "expected_doc": null, "must_include": []}

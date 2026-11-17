@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  gateway:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: gateway
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.23"
+      - run: test -z "$(gofmt -l .)"
+      - run: go vet ./...
+      - run: go test -race ./...
+
+  rag-service:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: rag_service
+    env:
+      RAG_LLM_PROVIDER: extractive
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -r requirements.txt
+      - run: pytest -q
+      # Retrieval-quality regression gate: offline (no API key), real embeddings.
+      - run: python -m app.ingest
+      - run: python -m eval.run_eval --llm extractive --min-accuracy 0.6
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: [gateway, rag-service]
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose build

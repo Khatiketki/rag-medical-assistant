@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+storage/
+.env
+rag_service/eval/results/*
+!rag_service/eval/results/.gitkeep
+gateway/gateway
+gateway/gateway.exe
